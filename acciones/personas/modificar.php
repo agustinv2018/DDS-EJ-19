@@ -4,6 +4,7 @@ header('Content-Type: application/json');
 require_once '../../modelo/persona.php';
 require_once 'responses/modificarResponse.php';
 require_once '../../configuracion/database.php';
+require_once 'request/modificarRequest.php';
 
 $json = file_get_contents('php://input',true);
 $req = json_decode($json);
